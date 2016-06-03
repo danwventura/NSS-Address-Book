@@ -1,0 +1,47 @@
+
+
+
+<div id="top-container">
+  <h1>New Contact</h1>
+  <button><i class="fa fa-search" aria-hidden="true"></i></button>
+  <input  type="text" name="searchContact" value="Search for..."></input>
+</div>
+
+
+<div class="contact">
+
+    
+  <div class="col-md-10 col-md-offset-1">
+    <form>
+
+      <div class="form-group">
+        <label class="name" >Name:</label><input class="form-control" type="text" placeholder="Name" ng-model="newContact.name"/>
+      </div>
+      
+      <div class="form-group">
+        <label>Address:</label><input class="form-control" type="text" placeholder="Address" ng-model="newContact.address"/>
+      </div>
+      
+      <div class="form-group">
+        <label>Email:</label><input class="form-control" type="text" placeholder="Email" ng-model="newContact.email"/>
+      </div>
+      
+      <div class="form-group">
+        <label>Work:</label><input class="form-control" type="text" placeholder="Work #" ng-model="newContact.work"/>
+      </div>
+      
+      <div class="form-group">
+        <label>Cell:</label><input class="form-control" type="text" placeholder="Cell #" ng-model="newContact.cell"/>
+      </div>
+      
+      <div class="form-group">
+        <label>Birthday:</label><input class="form-control" type="text" placeholder="birthday" ng-model="newContact.birthday"/>
+      </div>
+
+      <div class="text-center">
+        <button class="btn btn-default" ng-click="addNewContact()">Add Contact</button>        
+      </div>
+
+    </form>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="contactList">
+  
+  <h1>Contact List</h1>
+
+  <div ng-controller="ContactListCtrl">
+    <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="col-xs-2"><h4>Name</h4></div>
+          <div class="col-xs-4"><h4>Address</h4></div>
+          <div class="col-xs-3"><h4>Email</h4></div>
+          <div class="col-xs-2"><h4>Cell</h4></div>
+        
+        </div>      
+      </div>
+        
+    <div ng-repeat="contact in contacts">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="col-xs-2"><a ng-href="#/contacts/{{contact.name}}">{{contact.name}}</a></div>
+          <div class="col-xs-3">{{contact.address}}</div>
+          <div class="col-xs-4">{{contact.email}}</div>
+          <div class="col-xs-2">{{contact.cell}}</div>
+          <div class="col-xs-1"><button class="btn btn-danger" ng-click="contactDelete(contact.id)"><i class="fa fa-trash-o" aria-hidden="true"></i></button></div>
+        </div>      
+      </div>
+    </div>
+  </div>
+</div>    

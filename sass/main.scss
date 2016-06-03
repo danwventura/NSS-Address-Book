@@ -1,6 +1,27 @@
 
-$bodyColor: bisque;
+$bodyColor: #5081aa;
 
 body {
   background-color: $bodyColor;
+
+}
+
+#top-container {
+ text-align:center ;
+
+}
+
+.search-bar-spacing{
+  margin-bottom:12px;
+}
+
+.contactList {
+  font-weight: bold;
+  
+}
+
+.contactList h1 {
+  text-align: center;
+  font-weight: bold;
+
 }
